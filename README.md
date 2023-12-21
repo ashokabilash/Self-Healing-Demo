@@ -11,7 +11,7 @@
     <table>
         <tr>
             <td>Name</td>
-            <td><input type="text" placeholder="Enter your name" name="namewer" id="ww" element="asdf" tag="dfg"></td>
+            <td><input type="text" placeholder="Enter your name" name="name" id="ww" element="asdf" tag="dfg"></td>
         </tr>
     
         <tr>
