@@ -23,20 +23,29 @@
       // Get the input element by its ID
       var newIdInput = document.getElementById('newIdInput');
 
-      // Array of alternative IDs
-      var alternativeIds = ['koney', 'uony', 'jony', 'lony'];
+      // Array of predefined patterns
+      var patterns = ['joly', 'monu', 'bokr'];
 
-      // If the input has a value, use it as the next ID
-      var nextId = newIdInput.value || alternativeIds[0];
+      // Get the current ID of the input element
+      var currentId = newIdInput.id;
 
-      // Change the ID of the element
-      element.id = nextId;
+      // Find the index of the current ID in the array
+      var currentIndex = patterns.indexOf(currentId);
 
-      // Change the content of the element
-      element.innerHTML = 'Element ID has been changed to: ' + nextId;
+      // Calculate the next index (cycle back to the beginning if at the end)
+      var nextIndex = (currentIndex + 1) % patterns.length;
+
+      // Get the next ID from the array
+      var nextId = patterns[nextIndex];
+
+      // Change the ID of the input element
+      newIdInput.id = nextId;
 
       // Clear the input value
       newIdInput.value = '';
+
+      // Change the content of the element
+      element.innerHTML = 'Element ID has been changed to: ' + nextId;
     }
   </script>
 
