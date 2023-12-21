@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Change Web Element Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
 </head>
 <body>
 
-  <p id="elementToChange">This is the initial text.</p>
-  <button id="changeButton">Change Element</button>
-
-  <script>
-    // Function to be executed when the button is clicked
-    function changeElement() {
-      // Get the element by its ID
-      var element = document.getElementById('elementToChange');
-      
-      // Change the content of the element
-      element.innerHTML = 'Element has been changed!';
-    }
-
-    // Get the button by its ID
-    var changeButton = document.getElementById('changeButton');
-
-    // Add a click event listener to the button
-    changeButton.addEventListener('click', changeElement);
-  </script>
+<form>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Enter your name" name="namewer" id="ww" element="asdf" tag="dfg"></td>
+        </tr>
+    
+        <tr>
+            <td>Age</td>
+            <td><input type="number" placeholder="Enter your age" id="social" element="crucial" name="age"></td>
+        </tr>
+    
+        <tr>
+            <td></td>
+            <td><input type="submit"></td>
+        </tr>
+    
+        <tr>
+            <td></td>
+            <td><input type="reset"></td>
+        </tr>
+    
+        <tr>
+            <td>Address</td>
+            <td><input type="text" placeholder="Enter your address" name="address"></td>
+        </tr>
+    
+        <tr>
+            <td>Department</td>
+            <td>
+                <select name="department">
+                    <option value="html">HTML</option>
+                    <option value="python">Python</option>
+                    <option value="github">GitHub</option>
+                </select>
+            </td>
+        </tr>
+    
+        <tr>
+            <td></td>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
+</form>
 
 </body>
 </html>
