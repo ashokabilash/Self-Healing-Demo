@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 <body>
 
   <p id="elementToChange">This is the initial text.</p>
-  <button id="changeButton">Change Element</button>
+  <button id="changeButton" onclick="changeElement()">Change Element</button>
 
   <script>
     // Function to be executed when the button is clicked
@@ -16,15 +17,27 @@
       // Get the element by its ID
       var element = document.getElementById('elementToChange');
       
+      // Array of alternative IDs
+      var alternativeIds = ['koney', 'uony', 'jony', 'lony'];
+
+      // Get the current ID of the element
+      var currentId = element.id;
+
+      // Find the index of the current ID in the array
+      var currentIndex = alternativeIds.indexOf(currentId);
+
+      // Calculate the next index (cycle back to the beginning if at the end)
+      var nextIndex = (currentIndex + 1) % alternativeIds.length;
+
+      // Get the next ID from the array
+      var nextId = alternativeIds[nextIndex];
+
+      // Change the ID of the element
+      element.id = nextId;
+
       // Change the content of the element
-      element.innerHTML = 'Element has been changed!';
+      element.innerHTML = 'Element ID has been changed to: ' + nextId;
     }
-
-    // Get the button by its ID
-    var changeButton = document.getElementById('changeButton');
-
-    // Add a click event listener to the button
-    changeButton.addEventListener('click', changeElement);
   </script>
 
 </body>
