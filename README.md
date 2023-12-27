@@ -24,7 +24,7 @@
       var newIdInput = document.getElementById('newIdInput');
 
       // Array of predefined patterns
-      var patterns = ['findmyname'];
+      var patterns = ['INPUTDIGIT'];
 
       // Get the current ID of the input element
       var currentId = newIdInput.id;
