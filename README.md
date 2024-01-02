@@ -25,7 +25,7 @@
       var element = document.getElementById('elementToChange');
       
       // Get the input elements by their IDs
-      var newIdInput = document.getElementById('newNameInput');
+      var newIdInput = document.getElementById('button');
       var newNameInput = document.getElementById('newNameInput');
 
       // Array of predefined patterns for ID
