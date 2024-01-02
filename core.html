@@ -10,7 +10,7 @@
   <p id="elementToChange">This is the initial text.</p>
   
   <!-- Placeholder text input for ID -->
-  <input type="text" placeholder="Enter new ID" id="newNameInput">
+  <input type="text" placeholder="Enter new ID" id="button">
 
   <!-- Placeholder text input for Name -->
   <input type="text" placeholder="Enter new Name" id="newNameInput">
