@@ -9,9 +9,13 @@
 
   <p id="elementToChange">This is the initial text.</p>
   
-  <!-- Placeholder text input -->
-  <input type="text" placeholder="Enter new ID" id="newIdInput">
+  <!-- Placeholder text input for ID -->
+  <input type="text" placeholder="Enter new ID" id="newNameInput">
 
+  <!-- Placeholder text input for Name -->
+  <input type="text" placeholder="Enter new Name" id="newNameInput">
+
+  <!-- Button to change both ID and Name -->
   <button id="changeButton" onclick="changeElement()">Change Element</button>
 
   <script>
@@ -20,32 +24,42 @@
       // Get the element by its ID
       var element = document.getElementById('elementToChange');
       
-      // Get the input element by its ID
-      var newIdInput = document.getElementById('newIdInput');
+      // Get the input elements by their IDs
+      var newIdInput = document.getElementById('newNameInput');
+      var newNameInput = document.getElementById('newNameInput');
 
-      // Array of predefined patterns
-      var patterns = ['greenbutton'];
+      // Array of predefined patterns for ID
+      var idPatterns = ['greenbutton'];
 
-      // Get the current ID of the input element
+      // Array of predefined patterns for Name
+      var namePatterns = ['John', 'Jane', 'Doe'];
+
+      // Get the current ID and Name of the input elements
       var currentId = newIdInput.id;
+      var currentName = newNameInput.id;
 
-      // Find the index of the current ID in the array
-      var currentIndex = patterns.indexOf(currentId);
+      // Find the index of the current ID and Name in the arrays
+      var currentIdIndex = idPatterns.indexOf(currentId);
+      var currentNameIndex = namePatterns.indexOf(currentName);
 
-      // Calculate the next index (cycle back to the beginning if at the end)
-      var nextIndex = (currentIndex + 1) % patterns.length;
+      // Calculate the next indices (cycle back to the beginning if at the end)
+      var nextIdIndex = (currentIdIndex + 1) % idPatterns.length;
+      var nextNameIndex = (currentNameIndex + 1) % namePatterns.length;
 
-      // Get the next ID from the array
-      var nextId = patterns[nextIndex];
+      // Get the next ID and Name from the arrays
+      var nextId = idPatterns[nextIdIndex];
+      var nextName = namePatterns[nextNameIndex];
 
-      // Change the ID of the input element
+      // Change the ID and Name of the input elements
       newIdInput.id = nextId;
+      newNameInput.id = nextName;
 
-      // Clear the input value
+      // Clear the input values
       newIdInput.value = '';
+      newNameInput.value = '';
 
       // Change the content of the element
-      element.innerHTML = 'Element ID has been changed to: ' + nextId;
+      element.innerHTML = 'Element ID has been changed to: ' + nextId + ', and Name has been changed to: ' + nextName;
     }
   </script>
 
