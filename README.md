@@ -8,46 +8,35 @@
 <body>
 
   <p id="elementToChange">This is the initial text.</p>
-  
-  <!-- Placeholder text input -->
-  <input type="text" placeholder="Enter new ID" id="newIdInput">
 
-  <button id="changeButton" onclick="changeElement()">Change Element</button>
+  <!-- Placeholder text input for entering a new name -->
+  <input type="text" placeholder="Enter new name" id="enterNameInput">
+
+  <!-- Placeholder text input for entering a new email -->
+  <input type="email" placeholder="Enter new email" id="enterEmailInput">
+
+  <!-- Button to change all IDs -->
+  <button id="changeAllButton" onclick="changeAllIds()">Change All IDs</button>
 
   <script>
-    // Function to be executed when the button is clicked
-    function changeElement() {
-      // Get the element by its ID
-      var element = document.getElementById('elementToChange');
-      
-      // Get the input element by its ID
-      var newIdInput = document.getElementById('newIdInput');
+    // Function to be executed when the "Change All IDs" button is clicked
+    function changeAllIds() {
+      // Array of predefined patterns for all IDs
+      var allPatterns = ['name', 'email'];
 
-      // Array of predefined patterns
-      var patterns = ['btn'];
+      // Iterate over all patterns and change the corresponding IDs
+      allPatterns.forEach(function(pattern) {
+        // Get the input element by its ID
+        var inputElement = document.getElementById('enter' + pattern.charAt(0).toUpperCase() + pattern.slice(1) + 'Input');
 
-      // Get the current ID of the input element
-      var currentId = newIdInput.id;
+        // Change the ID of the input
+        inputElement.id = pattern + 'NewInput';
+      });
 
-      // Find the index of the current ID in the array
-      var currentIndex = patterns.indexOf(currentId);
-
-      // Calculate the next index (cycle back to the beginning if at the end)
-      var nextIndex = (currentIndex + 1) % patterns.length;
-
-      // Get the next ID from the array
-      var nextId = patterns[nextIndex];
-
-      // Change the ID of the input element
-      newIdInput.id = nextId;
-
-      // Clear the input value
-      newIdInput.value = '';
-
-      // Change the content of the element
-      element.innerHTML = 'Element ID has been changed to: ' + nextId;
+      // Display a message indicating that all IDs have been changed
+      alert('All input IDs have been changed.');
     }
   </script>
 
 </body>
-</html> in these code i want another name column and place holder
+</html>
