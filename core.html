@@ -10,10 +10,10 @@
   <p id="elementToChange">This is the initial text.</p>
 
   <!-- Placeholder text input for entering a new name -->
-  <input type="text" placeholder="Enter new name" id="enterNameInput">
+  <input type="text" placeholder="Enter new name" id="enterNameInputnet">
 
   <!-- Placeholder text input for entering a new email -->
-  <input type="email" placeholder="Enter new email" id="enterEmailInput">
+  <input type="email" placeholder="Enter new email" id="enterEmailInputnet">
 
   <!-- Button to change all IDs -->
   <button id="changeAllButton" onclick="changeAllIds()">Change All IDs</button>
