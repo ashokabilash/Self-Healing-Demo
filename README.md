@@ -12,7 +12,7 @@
   <!-- Placeholder text input for entering a new name -->
 
   <!-- Button to change all IDs -->
-  <button id="changeAllButton" onclick="changeAllIds()">Change All IDs</button>
+  <button id="venkybaadu" onclick="changeAllIds()">Change All IDs</button>
     <!-- Placeholder text input for entering a new name -->
 
   <!-- Additional placeholders at the bottom of the page -->
