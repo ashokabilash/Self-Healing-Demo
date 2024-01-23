@@ -13,16 +13,15 @@
 
   <!-- Button to change all IDs -->
   <button id="changeAllButton" onclick="changeAllIds()">Change All IDs</button>
+    <!-- Placeholder text input for entering a new name -->
+    <input type="text" placeholder="Enter new name" id="maximus">
 
+    <!-- Placeholder text input for entering a new email -->
+    <input type="email" placeholder="Enter new email" id="murph">
   <!-- Additional placeholders at the bottom of the page -->
   <input type="text" placeholder="Enter another name" id="anotherNameInput">
   <input type="email" placeholder="Enter another email" id="anotherEmailInput">
 
-    <!-- Placeholder text input for entering a new name -->
-    <input type="text" placeholder="Enter new name" id="neo">
-
-    <!-- Placeholder text input for entering a new email -->
-    <input type="email" placeholder="Enter new email" id="wert">
 
 
   <script>
