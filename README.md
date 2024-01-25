@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Booking</title>
   <style>
+    .Change-Web-Element-Example {
+      display: none;
+    }
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
