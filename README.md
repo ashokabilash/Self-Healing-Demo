@@ -17,8 +17,8 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background: url('your-hotel-background-image.jpg') center/cover no-repeat; /* Add your background image URL */
-      filter: brightness(90%); /* Apply a slight blue tint to the background */
+      background: url("E:\your-hotel-background-image.jpg") center/cover no-repeat; /* Add your background image URL */
+      filter: brightness(80%); /* Apply a slight blue tint to the background */
     }
 
     header {
