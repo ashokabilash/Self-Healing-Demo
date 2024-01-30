@@ -18,7 +18,7 @@
       justify-content: center;
       height: 100vh;
       background: url('your-hotel-background-image.jpg') center/cover no-repeat; /* Add your background image URL */
-      filter: brightness(100%); /* Apply a slight blue tint to the background */
+      filter: brightness(90%); /* Apply a slight blue tint to the background */
     }
 
     header {
@@ -148,17 +148,21 @@
   <div class="login-container">
     <form id="hotelLoginForm">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="email" id="cat" name="email" required>
+      <input type="text" id="qat" name="name" required>
 
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+      <select id="wert" name="roomType" required>
+      <input type="text" id="qat" name="name" required>
+      <input type="date" id="zdghf" name="arrivalDate" required>
+      
       <div class="required-info">
         <span class="info-icon">ℹ️</span>
         This field is required.
       </div>
 
       <label for="roomType">Room Type:</label>
-      <select id="roomType" name="roomType" required>
+      
         <option value="single">Single</option>
         <option value="double">Double</option>
         <option value="suite">Suite</option>
