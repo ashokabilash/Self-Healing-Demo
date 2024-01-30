@@ -148,21 +148,17 @@
   <div class="login-container">
     <form id="hotelLoginForm">
       <label for="name">Name:</label>
-      <input type="email" id="cat" name="email" required>
-      <input type="text" id="qat" name="name" required>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">E-mail:</label>
-      <select id="wert" name="roomType" required>
-      <input type="text" id="qat" name="name" required>
-      <input type="date" id="zdghf" name="arrivalDate" required>
-      
+      <input type="email" id="email" name="email" required>
       <div class="required-info">
         <span class="info-icon">ℹ️</span>
         This field is required.
       </div>
 
       <label for="roomType">Room Type:</label>
-      
+      <select id="roomType" name="roomType" required>
         <option value="single">Single</option>
         <option value="double">Double</option>
         <option value="suite">Suite</option>
