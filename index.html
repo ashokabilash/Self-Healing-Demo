@@ -148,10 +148,19 @@
   <div class="login-container">
     <form id="hotelLoginForm">
       <label for="name">Name:</label>
-      <input type="text" id="nameid" name="name" required>
+      <div>
+
+        <input type="date" id="poiu" name="departureDate" required>
+        
+        
+
+
+
+      </div>
+      
 
       <label for="email">E-mail:</label>
-      <input type="email" id="emailid" name="email" required>
+      
       <div class="required-info">
         <span class="info-icon">ℹ️</span>
         This field is required.
@@ -165,13 +174,24 @@
       </select>
 
       <label for="arrivalDate">Arrival Date:</label>
-      <input type="date" id="arrivalDate" name="arrivalDate" required>
 
       <label for="departureDate">Departure Date:</label>
-      <input type="date" id="departureDate" name="departureDate" required>
+      <div>
+        <input type="date" id="asdf" name="arrivalDate" required>
+
+      </div>
+      <div>
+        <input type="email" id="zxcv" name="email" required>
+        
+      </div>
+      
 
       <label for="specialRequests">Special Requests:</label>
       <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+      <div>
+        <input type="text" id="qwer" name="name" required>
+        
+      </div>
 
       <button type="submit" class="submit-button">Submit</button>
     </form>
