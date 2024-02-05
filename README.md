@@ -165,10 +165,10 @@
       </select>
 
       <label for="arrivalDate">Arrival Date:</label>
-      <input type="date" id="arrivalDate" name="arrivalDate" required>
+      <input type="text" id="arrivalDate" name="arrivalDate" required>
 
       <label for="departureDate">Departure Date:</label>
-      <input type="date" id="departureDate" name="departureDate" required>
+      <input type="text" id="arrivalDate" name="arrivalDate" required>
 
       <label for="specialRequests">Special Requests:</label>
       <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
