@@ -1,13 +1,9 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Booking</title>
   <style>
-    .Change-Web-Element-Example {
-      display: none;
-    }
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -165,10 +161,10 @@
       </select>
 
       <label for="arrivalDate">Arrival Date:</label>
-      <input type="text" id="were" name="arrivalDate" required>
+      <input type="date" id="arrivalDate" name="arrivalDate" required>
 
       <label for="departureDate">Departure Date:</label>
-      <input type="text" id="arrivalDate" name="arrivalDate" required>
+      <input type="date" id="departureDate" name="departureDate" required>
 
       <label for="specialRequests">Special Requests:</label>
       <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
