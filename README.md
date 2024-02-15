@@ -145,7 +145,7 @@
   <div class="login-container">
     <form id="hotelLoginForm">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="namekumar" required>
 
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" required>
