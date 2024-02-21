@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Booking</title>
   <style>
+    .Change-Web-Element-Example {
+      display: none;
+    }
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -145,30 +148,30 @@
   <div class="login-container">
     <form id="hotelLoginForm">
       <label for="name">Name:</label>
-      <input type="text" id="nameVIK" name="nameVIK" required>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">E-mail:</label>
-      <input type="email" id="emailVIK" name="emailVIK" required>
+      <input type="email" id="email" name="email" required>
       <div class="required-info">
         <span class="info-icon">ℹ️</span>
         This field is required.
       </div>
 
       <label for="roomType">Room Type:</label>
-      <select id="roomTypeVIK" name="roomTypeVIK" required>
+      <select id="roomType" name="roomType" required>
         <option value="single">Single</option>
         <option value="double">Double</option>
         <option value="suite">Suite</option>
       </select>
 
       <label for="arrivalDate">Arrival Date:</label>
-      <input type="date" id="arrivalDateVIK" name="arrivalDateVIK" required>
+      <input type="date" id="arrivalDate" name="arrivalDate" required>
 
       <label for="departureDate">Departure Date:</label>
-      <input type="date" id="departureDateVIK" name="departureDateVIK" required>
+      <input type="date" id="departureDate" name="departureDate" required>
 
       <label for="specialRequests">Special Requests:</label>
-      <textarea id="specialRequestsVIK" name="specialRequestsVIK" rows="4"></textarea>
+      <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
 
       <button type="submit" class="submit-button">Submit</button>
     </form>
