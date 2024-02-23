@@ -151,7 +151,7 @@
       <input type="text" id="name" name="nameas" required>
 
       <label for="email">E-mail:</label>
-      <input type="email" id="emailas" name="email" required>
+      <input type="email" id="emailheal" name="email" required>
       <div class="required-info">
         <span class="info-icon">ℹ️</span>
         This field is required.
