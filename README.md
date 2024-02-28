@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -144,10 +145,10 @@
   <div class="login-container">
     <form id="hotelLoginForm">
       <label for="name">Name:</label>
-      <input type="text" id="vikram" name="name" required>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">E-mail:</label>
-      <input type="email" id="venkat" name="email" required>
+      <input type="email" id="email" name="email" required>
       <div class="required-info">
         <span class="info-icon">ℹ️</span>
         This field is required.
@@ -169,7 +170,7 @@
       <label for="specialRequests">Special Requests:</label>
       <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
 
-      <button type="submit" class="abilash">Submit</button>
+      <button type="submit" class="submit-button">Submit</button>
     </form>
 
     <div id="celebrationMessage" class="celebration-message">
